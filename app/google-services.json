@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "606453168175",
+    "firebase_url": "https://cliqbuzz-c56b0.firebaseio.com",
+    "project_id": "cliqbuzz-c56b0",
+    "storage_bucket": "cliqbuzz-c56b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606453168175:android:39d00a7371df3995ec2eda",
+        "android_client_info": {
+          "package_name": "com.example.cliqbuzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606453168175-lifgph7rurdc28es31p7o6s2771pcpac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cliqbuzz",
+            "certificate_hash": "e799860c372464aa8afc7ca7459334eca7ba8d2f"
+          }
+        },
+        {
+          "client_id": "606453168175-lt5isdboiq1ktre5fsnqnbofk5q0bs9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrgbPq3KhI82cPKc6410_5WM5_517gCv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606453168175-lt5isdboiq1ktre5fsnqnbofk5q0bs9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
