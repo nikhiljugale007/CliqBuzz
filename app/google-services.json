@@ -1,42 +1,111 @@
 {
   "project_info": {
-    "project_number": "606453168175",
-    "firebase_url": "https://cliqbuzz-c56b0.firebaseio.com",
-    "project_id": "cliqbuzz-c56b0",
-    "storage_bucket": "cliqbuzz-c56b0.appspot.com"
+    "project_number": "512051973316",
+    "firebase_url": "https://cliqbuzz-a3aaa.firebaseio.com",
+    "project_id": "cliqbuzz-a3aaa",
+    "storage_bucket": "cliqbuzz-a3aaa.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:606453168175:android:39d00a7371df3995ec2eda",
+        "mobilesdk_app_id": "1:512051973316:android:ac2bbf1bc69456d6278d91",
         "android_client_info": {
-          "package_name": "com.example.cliqbuzz"
+          "package_name": "com.example.cliq"
         }
       },
       "oauth_client": [
         {
-          "client_id": "606453168175-lifgph7rurdc28es31p7o6s2771pcpac.apps.googleusercontent.com",
+          "client_id": "512051973316-g6tlt4ks85q7lpvdlitdgenkmqn4g6sl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.cliqbuzz",
+            "package_name": "com.example.cliq",
             "certificate_hash": "e799860c372464aa8afc7ca7459334eca7ba8d2f"
           }
         },
         {
-          "client_id": "606453168175-lt5isdboiq1ktre5fsnqnbofk5q0bs9i.apps.googleusercontent.com",
+          "client_id": "512051973316-sb5582rajsb2nliaogg1t5naglem7b1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cliq",
+            "certificate_hash": "31f4cefbc39e42fc116dfcdc186f3c461e1d4c4a"
+          }
+        },
+        {
+          "client_id": "512051973316-2sjq5omu7tn2b45aa5go90utacpou5lk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cliq",
+            "certificate_hash": "6cd988e1dc810a96d654cf371f0a18c81b3c004c"
+          }
+        },
+        {
+          "client_id": "512051973316-rqvhi88rtcftg76vmeba1g8a6pc9cs9u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDrgbPq3KhI82cPKc6410_5WM5_517gCv8"
+          "current_key": "AIzaSyB9GEzyBqdI75gK3Qch59-9AeFqNIHNHHI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "606453168175-lt5isdboiq1ktre5fsnqnbofk5q0bs9i.apps.googleusercontent.com",
+              "client_id": "512051973316-rqvhi88rtcftg76vmeba1g8a6pc9cs9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512051973316:android:b8d8ee1fa536809e278d91",
+        "android_client_info": {
+          "package_name": "com.example.cliqbuzzlite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512051973316-edrba38nkmgujaihd2du5bi72ig70ugp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cliqbuzzlite",
+            "certificate_hash": "e799860c372464aa8afc7ca7459334eca7ba8d2f"
+          }
+        },
+        {
+          "client_id": "512051973316-ufk7n580jk0etmn7mmg84l8mulmvhta5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cliqbuzzlite",
+            "certificate_hash": "6cd988e1dc810a96d654cf371f0a18c81b3c004c"
+          }
+        },
+        {
+          "client_id": "512051973316-mmcm1hoh3q4172vkbik5sr4panv6vcct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cliqbuzzlite",
+            "certificate_hash": "31f4cefbc39e42fc116dfcdc186f3c461e1d4c4a"
+          }
+        },
+        {
+          "client_id": "512051973316-rqvhi88rtcftg76vmeba1g8a6pc9cs9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9GEzyBqdI75gK3Qch59-9AeFqNIHNHHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512051973316-rqvhi88rtcftg76vmeba1g8a6pc9cs9u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

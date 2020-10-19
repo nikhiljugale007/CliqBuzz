@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfile">
+
+    <ImageView
+        android:id="@+id/update_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/round_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Profile"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <TextView
+            android:id="@+id/TextViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="Enter your name"/>
+        <TextView
+            android:id="@+id/TextViewSurName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/EditTextSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="Enter username"/>
+        <TextView
+            android:id="@+id/TextViewPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/EditTextPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your verified phone number"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/TextViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mail ID"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/textViewEmailAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="email address"
+            android:textColor="@color/colorPrimaryDark"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSaveButton"
+            android:layout_marginTop="10dp"
+            android:text="save"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+</LinearLayout>

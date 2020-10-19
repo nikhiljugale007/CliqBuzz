@@ -1,48 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  >
-
-  <LinearLayout
-    android:id="@+id/linearLayout"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="15dp"
-    android:layout_centerInParent="true">
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    >
 
-    <EditText
-      android:id="@+id/editTextPhoneNumber"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:digits="0123456789"
-      android:ems="10"
-      android:hint="Enter phone"
-      android:inputType="phone" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Welcome to"/>
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="CliqBuzz"/>
+        </RelativeLayout>
 
-    <Button
-      android:id="@+id/buttonSendOTP"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Get Verification Code"
-      android:textAllCaps="false" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_otp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:padding="20dp">
 
-    <EditText
-      android:id="@+id/editTextOTP"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:digits="0123456789"
-      android:hint="Enter OTP received"
-      android:inputType="number" />
 
-    <Button
-      android:id="@+id/buttonVerifyOTP"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Sign In" />
-  </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputOTP"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            >
+            <EditText
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_color="#FFF"
+            android:text="Submit"
+            android:onClick="onSubmit"
+            android:layout_gravity="center_horizontal"
+            app:spinning_bar_padding="6dp"
+            app:initialCornerAngle="27dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_mobile"
+        android:layout_centerInParent="true"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_color="#FFF"
+            android:text="Login"
+            android:onClick="onLogin"
+            android:layout_gravity="center_horizontal"
+            app:spinning_bar_padding="6dp"
+            app:initialCornerAngle="27dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
